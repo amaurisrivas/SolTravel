@@ -7,29 +7,32 @@
 
 	<BODY> 
 	   
-	   <img src="SolTravelLogo2.jpg">
+	   <img src="SolTravelLogo2.jpg" style="vertical-align:middle;margin:50px 0px">
 
     <!-- Formulario con conjunto de campos, leyenda y etiqueta -->
 	   <form action="" method="post">
-		   <fieldset>
-	   	 <legend>Reserva</legend>
-         <label>Noches</Label>
-	       <input name="form_Noches" id="form_Noches" type="number" min="1" max="10" >
-         <br>
-         <label>Personas</Label>
-	       <input name="form_Personas" id="form_Personas" type="number" min="1" max="10" >
-         <br>
-         <label>Desde:</Label>
+	     <fieldset>
+	   	 <legend>Reserva: </legend>
+                 <label>Noches</Label>
+	         <input name="form_Noches" id="form_Noches" type="number" min="1" max="10" >
+                 <br>
+                 <label>Personas</Label>
+	         <input name="form_Personas" id="form_Personas" type="number" min="1" max="10" >
+                <br>
+	        <label for="Nombres">Nombre(s):</label>
+                 <input type="text" id="form_nombres" name="form_nombres" multiple>
+		<br>     
+                <label>Desde:</Label>
          	<input name="form_date_desde" id="form_date_desde" type="date">
-         <br>
-         <label>Hasta:</Label>
+                <br>
+                <label>Hasta:</Label>
          	<input name="form_date_hasta" id="form_date_hasta" type="date">
-    </fieldset> 
-     	
-	   </form>
+            </fieldset> 
+     	 </form>
 	 
            <button>Reservar </button>
-	         
+	   <br>
+	   <br>
          <script src="scripts/imgmain.js"> </script>
 	</BODY>
 </HTML>
